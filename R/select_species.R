@@ -10,6 +10,7 @@
 #'         columns (`site`, `year`, `obs_date`, `latitude`, `longitude`).
 #'
 #' @examples
+#' \dontrun{
 #' # Example dataset
 #' invsp_wide <- data.frame(
 #'     site = c("1001", "1002"),
@@ -25,6 +26,7 @@
 #'
 #' # View result
 #' print(selected_species_df)
+#' }
 #' @export
 select_species <- function(data, species_name) {
     # [Step 1: Convert species name to snake_case to ensure consistency]
