@@ -10,6 +10,7 @@
 #' @examples
 #' snake_case(c("Normal 1991_2020 AHM", "Normal 1991_2020 bFFP"))
 #' # Returns: c("normal_1991_2020_ahm", "normal_1991_2020_b_ffp")
+#' @export
 snake_case <- function(x) {
     x <- gsub("[^A-Za-z0-9_ ]", "", x) # Remove special characters
     x <- gsub(" ", "_", x) # Replace spaces with underscores
