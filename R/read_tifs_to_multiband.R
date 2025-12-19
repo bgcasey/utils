@@ -13,11 +13,14 @@
 #' corresponding file.
 #'
 #' @examples
+#' \dontrun{
 #' # Example usage of the function
 #' tif_directory <- "path/to/tif/files"
 #' multiband_raster <- read_tifs_to_multiband(tif_directory)
 #' print(multiband_raster) # Display the multiband raster object
 #' plot(multiband_raster) # Plot the raster bands
+#' }
+#' @export
 read_tifs_to_multiband <- function(tif_directory) {
     # Step 1: List all TIF files in the specified directory
     tif_files <- list.files(
