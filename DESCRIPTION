@@ -19,7 +19,9 @@ Imports:
     rnaturalearth,
     ggplot2,
     glue,
-    parallel
+    parallel,
+    rlang,
+    tidyselect
 Suggests:
     rnaturalearthhires,
     rstudioapi,
