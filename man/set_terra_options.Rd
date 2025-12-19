@@ -51,7 +51,8 @@ optional memory buffer for spikes. It sets
 in \code{terra}.
 }
 \examples{
-cores <- set_terra_options_with_buffer(
+\dontrun{
+cores <- set_terra_options(
     total_memory_gb = 128,
     total_cores = 20,
     resource_percent = 50,
@@ -60,5 +61,6 @@ cores <- set_terra_options_with_buffer(
     tempdir = "D:/r_temp/RtmpWSPfnw"
 )
 print(cores)
+}
 
 }
