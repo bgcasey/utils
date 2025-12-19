@@ -29,7 +29,8 @@
 #' used for parallel processing.
 #'
 #' @examples
-#' cores <- set_terra_options_with_buffer(
+#' \dontrun{
+#' cores <- set_terra_options(
 #'     total_memory_gb = 128,
 #'     total_cores = 20,
 #'     resource_percent = 50,
@@ -38,6 +39,7 @@
 #'     tempdir = "D:/r_temp/RtmpWSPfnw"
 #' )
 #' print(cores)
+#' }
 #'
 #' @export
 set_terra_options <- function(
