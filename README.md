@@ -1,24 +1,17 @@
 # utilR
 
+![Maintenance](https://img.shields.io/badge/Status-Maintenance-green)
+![Languages](https://img.shields.io/badge/Languages-R-blue)
+
+
 A reusable toolkit of personal R utility functions to support data processing, spatial workflows, modelling, and general analysis across projects.
 
 ## Installation
 
-You can install the package directly from GitHub (or locally):
+You can install the package directly from GitHub:
 
 ```r
-# Install from local directory
-devtools::install("path/to/utilR")
-
-# Or if hosted on GitHub:
-# devtools::install_github("yourusername/utilR")
-```
-
-Alternatively, install using `remotes`:
-
-```r
-# Install from local directory
-remotes::install_local("path/to/utilR")
+devtools::install_github("bgcasey/utilR")
 ```
 
 ## Functions
