@@ -2,7 +2,7 @@ Package: utilR
 Type: Package
 Title: Personal R Utility Functions
 Version: 0.1.0
-Authors@R: person("Brendan Casey", "bgcasey@ualberta.ca", role = c("aut", "cre"))
+Authors@R: person(given = "Brendan", family = "Casey", email = "bgcasey@ualberta.ca", role = c("aut", "cre"))
 Description: A reusable toolkit of personal R utility functions to support
     data processing, spatial workflows, modelling, and general analysis across
     projects. Includes functions for spatial data handling, raster extraction,
