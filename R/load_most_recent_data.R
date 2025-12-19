@@ -2,7 +2,7 @@
 #'
 #' This function dynamically loads the most recent `.rData` file
 #' from a specified directory that matches a given file prefix and
-#' follows the naming convention: [prefix]YYYY-MM-DD.rData.
+#' follows the naming convention: `prefix`YYYY-MM-DD.RData.
 #'
 #' @param directory character. Path to the directory containing
 #'   the `.rData` files.
@@ -12,13 +12,17 @@
 #' @return Loads the data from the most recent `.rData` file into
 #'   the global environment and prints the name of the loaded file.
 #'
-#' @example
+#' @examples
 #' # Example usage
+#' \dontrun{
+#' # Example usage (requires files matching the pattern)
 #' load_most_recent_data(
-#'   directory = "2_pipeline/",
-#'   file_prefix = "data_for_models_"
+#'     directory = "2_pipeline/",
+#'     file_prefix = "data_for_models_"
 #' )
+#' }
 #'
+#' @export
 load_most_recent_data <- function(directory, file_prefix) {
     # Step 1: List all files matching the prefix and pattern
     files <- list.files(
