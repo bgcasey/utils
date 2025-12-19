@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' # Example data
-#' sf_object <- st_as_sf(data.frame(
+#' sf_object <- sf::st_as_sf(data.frame(
 #'     site = c("A", "B"),
 #'     year = c(2020, 2021),
 #'     longitude = c(-114.07, -113.49),
@@ -40,6 +40,7 @@
 #'
 #' # Example result printing
 #' print(extracted_values)
+#' @export
 extract_by_year <- function(sf_object, raster_list, extract_args = list()) {
     # Step 1: Extract years from raster names
     raster_years <- sapply(
