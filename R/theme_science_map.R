@@ -6,14 +6,16 @@
 #'
 #' @return A ggplot2 theme object.
 #'
-#' @example
+#' @examples
 #' # Example usage:
 #' library(ggplot2)
 #' p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
-#'   geom_point() +
-#'   labs(title = "Example Plot", x = "Weight", y = "mpg") +
-#'   theme_science()
+#'     geom_point() +
+#'     labs(title = "Example Plot", x = "Weight", y = "mpg") +
+#'     theme_science()
 #' print(p)
+#' @importFrom ggplot2 theme_minimal theme element_line element_text element_blank element_rect
+#' @export
 theme_science_map <- function() {
     # Create a custom ggplot2 theme
     theme_minimal(base_size = 12, base_family = "sans") +
