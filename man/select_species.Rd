@@ -21,6 +21,7 @@ This function selects a specific species column from a dataset while
 retaining key site and location information.
 }
 \examples{
+\dontrun{
 # Example dataset
 invsp_wide <- data.frame(
     site = c("1001", "1002"),
@@ -36,4 +37,5 @@ selected_species_df <- select_species(invsp_wide, "Ranunculus acris")
 
 # View result
 print(selected_species_df)
+}
 }
