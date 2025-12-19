@@ -19,9 +19,11 @@ This function scans a directory for \code{.RData} files, loads each file,
 and stores all objects from the \code{.RData} files into a single list.
 }
 \examples{
+\dontrun{
 # Example usage of the function
 data_dir <- "path/to/your/data/directory"
 all_data <- load_rdata_files(data_dir)
 print(names(all_data)) # Prints the names of loaded objects
+}
 
 }
