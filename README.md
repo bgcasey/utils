@@ -1,10 +1,10 @@
-# utilR
+# utils
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow) 
 ![Languages](https://img.shields.io/badge/Languages-R-blue)
 
 
-A reusable toolkit of personal R utility functions to support data processing, spatial workflows, modelling, and general analysis across projects.
+A library of utility functions to support data processing, spatial workflows, modelling, and general analysis across projects.
 
 ## Installation
 
