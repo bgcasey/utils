@@ -51,7 +51,7 @@ The package includes the following utility functions:
 ## Usage
 
 ```r
-library(utilR)
+library(utils)
 
 # Example: Convert strings to snake_case
 snake_case(c("Normal 1991_2020 AHM", "Normal 1991_2020 bFFP"))
