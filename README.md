@@ -11,7 +11,7 @@ A library of utility functions to support data processing, spatial workflows, mo
 You can install the package directly from GitHub:
 
 ```r
-devtools::install_github("bgcasey/utilR")
+devtools::install_github("bgcasey/utils")
 ```
 
 ## Functions
