@@ -1,4 +1,4 @@
-Package: utils
+Package: utilR
 Type: Package
 Title: Personal R Utility Functions
 Version: 0.1.0
