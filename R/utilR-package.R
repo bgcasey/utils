@@ -1,4 +1,4 @@
-#' utils: Personal R Utility Functions
+#' utilR: Personal R Utility Functions
 #'
 #' A reusable toolkit of personal R utility functions to support
 #' data processing, spatial workflows, modelling, and general analysis across
@@ -17,6 +17,6 @@
 #' - `style_active_file()`: Format active file with `styler`.
 #' - `summarize_column_classes()`: Inspect data frame column classes.
 #'
-#' @aliases utils utils-package
+#' @aliases utilR utilR-package
 #' @keywords internal
 "_PACKAGE"

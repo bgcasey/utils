@@ -1,4 +1,4 @@
-# utils
+# utilR
 
 ![In Development](https://img.shields.io/badge/Status-In%20Development-yellow) 
 ![Languages](https://img.shields.io/badge/Languages-R-blue)
@@ -33,6 +33,9 @@ The package includes the following utility functions:
 - `read_tifs_to_list()` - Read TIF files into a named list
 - `read_tifs_to_multiband()` - Read TIF files into a multiband raster object
 
+### Document Export Functions
+- `export_abmi_document()` - Export a Markdown document to an ABMI-styled docx (ABMI reference doc) or PDF (LaTeX), with numbered captions, `@tbl-`/`@fig-` cross-references, citations, highlighted code and mermaid diagrams. Requires pandoc ≥ 3.1; PDF needs xelatex; mermaid needs mermaid-cli (`mmdc`)
+
 ### Data Manipulation Functions
 - `select_one_response()` - Select a single response column from data
 - `select_species()` - Select a specific species column
@@ -51,7 +54,7 @@ The package includes the following utility functions:
 ## Usage
 
 ```r
-library(utils)
+library(utilR)
 
 # Example: Convert strings to snake_case
 snake_case(c("Normal 1991_2020 AHM", "Normal 1991_2020 bFFP"))
