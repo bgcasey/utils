@@ -2,7 +2,6 @@
 
 export(add_alberta_flag)
 export(estimate_processing_time)
-export(export_abmi_document)
 export(extract_by_year)
 export(format_time_diff)
 export(load_most_recent_data)

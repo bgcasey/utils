@@ -33,9 +33,6 @@ The package includes the following utility functions:
 - `read_tifs_to_list()` - Read TIF files into a named list
 - `read_tifs_to_multiband()` - Read TIF files into a multiband raster object
 
-### Document Export Functions
-- `export_abmi_document()` - Export a Markdown document to an ABMI-styled docx (ABMI reference doc) or PDF (LaTeX), with numbered captions, `@tbl-`/`@fig-` cross-references, citations, highlighted code and mermaid diagrams. Requires pandoc ≥ 3.1; PDF needs xelatex; mermaid needs mermaid-cli (`mmdc`)
-
 ### Data Manipulation Functions
 - `select_one_response()` - Select a single response column from data
 - `select_species()` - Select a specific species column
@@ -73,34 +70,6 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
   theme_science()
 ```
 
-### Setting the ABMI reference doc for `export_abmi_document()`
-
-`export_abmi_document()` styles its output with the ABMI Word reference doc. It looks for the file at `~/Dropbox/3_resources/pandoc/referenceDocs/abmi_ref_doc.docx`. The reference doc isn't included in the package, so on a machine where it's stored somewhere else (or where Dropbox isn't at `~/Dropbox`), point the function at it once in your `~/.Rprofile`:
-
-1. Open your `.Rprofile` (this creates it if it doesn't exist):
-
-   ```r
-   usethis::edit_r_profile()
-   ```
-
-2. Add this line, with the path to the reference doc on that machine:
-
-   ```r
-   options(utilR.abmi_reference_doc = "~/path/to/abmi_ref_doc.docx")
-   ```
-
-   On Windows, use forward slashes, e.g. `"C:/Users/you/Dropbox/3_resources/pandoc/referenceDocs/abmi_ref_doc.docx"`.
-
-3. Save the file and restart R (in RStudio: *Session > Restart R*).
-
-4. Check that the option is set and that the file exists:
-
-   ```r
-   getOption("utilR.abmi_reference_doc")
-   file.exists(path.expand(getOption("utilR.abmi_reference_doc")))   # should be TRUE
-   ```
-
-To use a different reference doc for a single export, pass it directly instead: `export_abmi_document("doc.md", reference_doc = "other_ref.docx")`.
 
 ## Dependencies
 
